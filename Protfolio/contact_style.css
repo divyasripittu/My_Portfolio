@@ -63,6 +63,11 @@ img{
     width: auto;
 }
 
+img:hover , button:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
 .main{
     background-color: rgba(0, 0, 0, 0.3);
     margin-left: 15dvw;
@@ -72,6 +77,7 @@ img{
     border-radius: 5px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .elements{
@@ -79,6 +85,8 @@ img{
     flex-direction: column;
     align-items: end;
     gap: 1dvw;
+    margin-right: 4dvw;
+    margin-top: 2dvw;
 }
 
 label{
@@ -98,7 +106,8 @@ input{
     border-width: 0px;
     border-radius: 3px;
     height:5dvh;
-    width: 50dvh;
+    width: 60dvh;
+    margin-left: 5dvw;
 }
 
 button{
@@ -109,4 +118,5 @@ button{
     border: 1px solid rgb(231, 7, 7);
     border-radius: 3px;
     align-self: center;
+    margin-left: 15dvw;
 }
