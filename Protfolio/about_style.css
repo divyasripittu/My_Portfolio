@@ -1,0 +1,117 @@
+body {
+    background-image: url(./2.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    position: absolute;
+    margin: 0%;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99dvw;
+    height: 175dvh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+body * {
+    position: relative;
+    z-index: 2;
+}
+
+p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.heading{
+    padding-top: 10dvh;
+    padding-left: 15dvw;
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_right{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    /* padding-right: 15%; */
+    gap: 5dvw;
+    transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+
+#header_home_button:hover,#header_about_button:hover,#header_contact_button:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(231, 7, 7) ;
+}
+
+a{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: small;
+}
+
+.box_heading{
+    font-size: larger;
+    padding-left: 10px;
+}
+
+.subheading{
+    color: rgba(231, 7, 7, 0.836);
+}
+
+.details{
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 5dvh;
+    margin-left: 15dvw;
+    padding: 5px 5px 5px 5px;
+    height: auto;
+    width: 70dvw;
+    border-radius: 5px;
+}
+
+.elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50%;
+}
+
+.names{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box2_names{
+    flex-direction: column;
+    padding:10px 10px 10px 10px;
+}
+
+.name{
+    font-size: xx-large;
+    color: rgba(231, 7, 7, 0.836);
+}
+
+dl{
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+#resume_button{
+    padding: 10px 10px 10px 10px;
+    color: white;
+    border: 2px solid rgba(231, 7, 7, 0.836);
+    background-color: rgba(231, 7, 7, 0.836) ;
+    border-radius: 5px;
+    height: 5%;
+}
