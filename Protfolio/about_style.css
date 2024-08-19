@@ -72,10 +72,20 @@ a:hover{
 .box_heading{
     font-size: larger;
     padding-left: 10px;
+    /* margin-top: 0%; */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(174, 4, 4) ;
+}
+
+#resume{
+    text-decoration: none;
 }
 
 .subheading{
     color: rgba(231, 7, 7, 0.836);
+    margin-top: 0%;
 }
 
 .details{
