@@ -41,6 +41,11 @@ a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
     text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover{
+    transform: scale(1.1);
 }
 
 .header_right{
@@ -102,12 +107,20 @@ label{
 }
 
 input{
-    background-color: rgb(222, 222, 222);
-    border-width: 0px;
+    background-color: rgb(0,0,0,0.1);
+    border: 2px solid rgb(135, 126, 126);
     border-radius: 3px;
     height:5dvh;
-    width: 60dvh;
+    width: 40dvw;
     margin-left: 5dvw;
+}
+
+textarea{
+    background-color: rgb(0,0,0,0.1);
+    border: 2px solid rgb(135, 126, 126);
+    border-radius: 3px;
+    height:20dvh;
+    width: 50dvw;
 }
 
 button{
@@ -118,5 +131,5 @@ button{
     border: 1px solid rgb(231, 7, 7);
     border-radius: 3px;
     align-self: center;
-    margin-left: 15dvw;
+    margin-left: 25dvw;
 }
